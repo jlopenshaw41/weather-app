@@ -11,7 +11,7 @@ const ForecastSummary = (props) => {
       </div>
       <div className="forecast-summary__temperature">
         {temperature.max}
-        &deg:C
+        &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
     </div>
