@@ -1,7 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import ForecastSummaries from "../../components/ForecastSummaries";
-import ForecastSummary from "../../components/ForecastSummary";
 
 describe("ForecastSummaries", () => {
   const validProps = [
@@ -37,5 +36,10 @@ describe("ForecastSummaries", () => {
     const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
     expect(asFragment()).toMatchSnapshot();
   });
-  xit("renders the correct number of instances of ForecastSummary", () => {});
+  it("renders the correct number of instances of ForecastSummary", () => {
+    const { getAllByTestId } = render(
+      <ForecastSummaries forecasts={validProps} />
+    );
+    expect(getAllByTestId("forecast-summary")).toHaveLength(3);
+  });
 });
