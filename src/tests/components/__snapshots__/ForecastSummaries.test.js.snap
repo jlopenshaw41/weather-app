@@ -18,7 +18,10 @@ exports[`ForecastSummaries renders as expected 1`] = `
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        StubIcon1
+        <i
+          class="wi wi-day-sunny"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
@@ -44,7 +47,10 @@ exports[`ForecastSummaries renders as expected 1`] = `
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        StubIcon2
+        <i
+          class="wi wi-day-snow"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
@@ -70,7 +76,10 @@ exports[`ForecastSummaries renders as expected 1`] = `
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        StubIcon3
+        <i
+          class="wi wi-day-rain"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
