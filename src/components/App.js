@@ -4,6 +4,7 @@ import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
+import SearchForm from "./SearchForm";
 
 const App = () => {
   const [forecasts, setForecasts] = useState([]);
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
+      <SearchForm />
       <ForecastSummaries
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
