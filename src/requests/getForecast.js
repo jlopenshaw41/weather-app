@@ -8,6 +8,8 @@ const getForecast = (
   setForecasts,
   setLocation
 ) => {
+  setErrorMessage("");
+
   let endpoint = "https://mcr-codes-weather-app.herokuapp.com/forecast";
 
   if (searchText) {
@@ -17,6 +19,7 @@ const getForecast = (
   return axios
     .get(endpoint)
     .then((response) => {
+      console.log(response.data);
       setSelectedDate(response.data.forecasts[0].date);
       setForecasts(response.data.forecasts);
       setLocation(response.data.location);

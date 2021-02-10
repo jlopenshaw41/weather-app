@@ -41,23 +41,23 @@ const App = () => {
 
   return (
     <div className="weather-app">
-      <LocationDetails
-        city={location.city}
-        country={location.country}
-        errorMessage={errorMessage}
-      />
       <SearchForm
         searchText={searchText}
         setSearchText={setSearchText}
         onSubmit={handleCitySearch}
       />
+      <LocationDetails
+        city={location.city}
+        country={location.country}
+        errorMessage={errorMessage}
+      />
       {!errorMessage && (
         <>
+          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
           <ForecastSummaries
             forecasts={forecasts}
             onForecastSelect={handleForecastSelect}
           />
-          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
         </>
       )}
     </div>
