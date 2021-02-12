@@ -1,10 +1,11 @@
-.search-form {
+.forecast-summary {
     border-radius: 25px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 50px;
-    padding: 40px;
+    padding: 5px;
     background-color: rgba(255,255,255,0.4);
-    width: 40%;
+    width: 5%;
 }
-
