@@ -46,14 +46,19 @@ const App = () => {
         setSearchText={setSearchText}
         onSubmit={handleCitySearch}
       />
-      <LocationDetails
-        city={location.city}
-        country={location.country}
-        errorMessage={errorMessage}
-      />
+
       {!errorMessage && (
         <>
-          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+          <div className="main-forecast">
+            <LocationDetails
+              city={location.city}
+              country={location.country}
+              errorMessage={errorMessage}
+            />
+            {selectedForecast && (
+              <ForecastDetails forecast={selectedForecast} />
+            )}
+          </div>
           <ForecastSummaries
             forecasts={forecasts}
             onForecastSelect={handleForecastSelect}
