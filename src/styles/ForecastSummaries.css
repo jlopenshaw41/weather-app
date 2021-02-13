@@ -2,6 +2,5 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px red solid;
-    width: 40%;
+    width: 50%;
 }
