@@ -5,7 +5,10 @@ import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
 import SearchForm from "./SearchForm";
-import applyBackgroundImage from "../helpers/applyBackgroundImage";
+import blueSkyCloudsImage from "../images/blue-sky-clouds.jpg";
+import cloudsImage from "../images/clouds.jpg";
+import rainImage from "../images/rain.jpg";
+import sunImage from "../images/sun.jpg";
 
 const App = () => {
   const [forecasts, setForecasts] = useState([]);
@@ -37,13 +40,31 @@ const App = () => {
       setLocation
     );
     setSearchText("");
-    applyBackgroundImage();
   };
 
   const handleForecastSelect = (date) => setSelectedDate(date);
 
+  let backgroundImage;
+
+  switch (selectedForecast.description) {
+    case "Clouds":
+      backgroundImage = cloudsImage;
+      break;
+    case "Rain":
+      backgroundImage = rainImage;
+      break;
+    case "Clear":
+      backgroundImage = sunImage;
+      break;
+    default:
+      backgroundImage = blueSkyCloudsImage;
+  }
+
   return (
-    <div className="weather-app">
+    <div
+      className="weather-app"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <SearchForm
         searchText={searchText}
         setSearchText={setSearchText}
