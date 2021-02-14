@@ -46,18 +46,22 @@ const App = () => {
 
   let backgroundImage;
 
-  switch (selectedForecast.description) {
-    case "Clouds":
-      backgroundImage = cloudsImage;
-      break;
-    case "Rain":
-      backgroundImage = rainImage;
-      break;
-    case "Clear":
-      backgroundImage = sunImage;
-      break;
-    default:
-      backgroundImage = blueSkyCloudsImage;
+  if (selectedForecast) {
+    switch (selectedForecast.description) {
+      case "Clouds":
+        backgroundImage = cloudsImage;
+        break;
+      case "Rain":
+        backgroundImage = rainImage;
+        break;
+      case "Clear":
+        backgroundImage = sunImage;
+        break;
+      default:
+        backgroundImage = blueSkyCloudsImage;
+    }
+  } else {
+    backgroundImage = blueSkyCloudsImage;
   }
 
   return (
