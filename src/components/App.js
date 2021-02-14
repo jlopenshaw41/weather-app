@@ -35,6 +35,7 @@ const App = () => {
       setForecasts,
       setLocation
     );
+    setSearchText("");
   };
 
   const handleForecastSelect = (date) => setSelectedDate(date);

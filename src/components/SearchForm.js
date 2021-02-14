@@ -10,6 +10,7 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       onSubmit();
+      setSearchText("");
     }
   };
 
@@ -20,6 +21,7 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
         onChange={handleInputChange}
         value={searchText}
         onKeyUp={handleKeyPress}
+        placeholder="Enter a town or city..."
       />
       <button type="submit" onClick={onSubmit}>
         <FontAwesomeIcon className="search-icon" icon={faSearch} />
