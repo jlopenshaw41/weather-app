@@ -47,24 +47,21 @@ const App = () => {
         onSubmit={handleCitySearch}
       />
 
-      {!errorMessage && (
-        <>
-          <div className="main-forecast">
-            <LocationDetails
-              city={location.city}
-              country={location.country}
-              errorMessage={errorMessage}
-            />
-            {selectedForecast && (
-              <ForecastDetails forecast={selectedForecast} />
-            )}
-          </div>
+      <>
+        <div className="main-forecast">
+          <LocationDetails city={location.city} errorMessage={errorMessage} />
+
+          {!errorMessage && selectedForecast && (
+            <ForecastDetails forecast={selectedForecast} />
+          )}
+        </div>
+        {!errorMessage && (
           <ForecastSummaries
             forecasts={forecasts}
             onForecastSelect={handleForecastSelect}
           />
-        </>
-      )}
+        )}
+      </>
     </div>
   );
 };

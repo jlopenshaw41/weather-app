@@ -19,7 +19,6 @@ const getForecast = (
   return axios
     .get(endpoint)
     .then((response) => {
-      console.log(response.data);
       setSelectedDate(response.data.forecasts[0].date);
       setForecasts(response.data.forecasts);
       setLocation(response.data.location);
@@ -27,7 +26,9 @@ const getForecast = (
     .catch((error) => {
       const { status } = error.response;
       if (status === 404) {
-        setErrorMessage("Invalid entry. Please enter a UK town or city.");
+        setErrorMessage(
+          "Sorry, we couldn't find a UK town or city matching that name. Please try again."
+        );
         console.error(
           "Location is not valid. Input must be a town or city in the UK.",
           error
