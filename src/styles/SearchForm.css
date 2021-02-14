@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
 
 .search-form {
-    font-family: "Montserrat", sans-serif;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -13,11 +12,27 @@
 
 .search-form > input {
     border: 1px solid #A9A9A9;
-    border-radius: 25px;
+    border-right: none;
+    border-radius: 25px 0px 0px 25px;
     background-color: rgba(255,255,255,0.7);
     color: #505050;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     padding: 5px 5px 5px 10px;
+}
+
+.search-form > button {
+    border: 1px solid #A9A9A9;
+    border-left: none;
+    border-radius: 0px 25px 25px 0px;
+    color: #606060;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.search-form >button:active {
+    color: black;
 }
 
