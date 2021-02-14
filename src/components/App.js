@@ -5,6 +5,7 @@ import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
 import SearchForm from "./SearchForm";
+import applyBackgroundImage from "../helpers/applyBackgroundImage";
 
 const App = () => {
   const [forecasts, setForecasts] = useState([]);
@@ -36,6 +37,7 @@ const App = () => {
       setLocation
     );
     setSearchText("");
+    applyBackgroundImage();
   };
 
   const handleForecastSelect = (date) => setSelectedDate(date);

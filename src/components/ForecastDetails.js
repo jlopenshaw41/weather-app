@@ -16,7 +16,9 @@ const ForecastDetails = ({ forecast }) => {
           <WeatherIcon name="owm" iconId={icon} />
         </div>
         <div className="forecast-details__body__text">
-          <div className="forecast-details__description">{description}</div>
+          <div className="forecast-details__description" id="description">
+            {description}
+          </div>
           <div className="forecast-details__min-temperature">
             Min temp:
             {` ${temperature.min}`}
