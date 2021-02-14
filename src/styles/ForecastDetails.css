@@ -1,11 +1,38 @@
 .forecast-details {
     width: 90%;
-    padding: 10px 20px;
+    padding: 5px 20px;
     align-self: flex-start;
     margin-top: 0px;
 }
 
 .forecast-details__date {
-  border: 1px red solid;
   align-self: flex-start;  
+}
+
+.forecast-details__body {
+  display: flex;
+}
+
+.forecast-details__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 100px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.forecast-details__body__text {
+  width: 50%;
+  font-size: 1rem;
+  padding: 0px 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.forecast-details__description {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
