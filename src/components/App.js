@@ -25,6 +25,7 @@ const App = () => {
       setForecasts,
       setLocation
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const selectedForecast = forecasts.find(
