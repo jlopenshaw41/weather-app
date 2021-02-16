@@ -5,6 +5,6 @@ import App from "../../components/App";
 describe("App", () => {
   it("renders as expected", () => {
     const { asFragment } = render(<App />);
-    expect(asFragment).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

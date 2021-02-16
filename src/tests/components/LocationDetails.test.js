@@ -4,9 +4,7 @@ import LocationDetails from "../../components/LocationDetails";
 
 describe("LocationDetails", () => {
   it("renders the correct city and country props", () => {
-    const { getByText } = render(
-      <LocationDetails city="Manchester" country="UK" />
-    );
-    expect(getByText("Manchester, UK")).toHaveClass("location-details");
+    const { getByText } = render(<LocationDetails city="Manchester" />);
+    expect(getByText("Manchester")).toHaveClass("location-details");
   });
 });

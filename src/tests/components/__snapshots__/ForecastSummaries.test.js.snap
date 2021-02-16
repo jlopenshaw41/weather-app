@@ -9,102 +9,99 @@ exports[`ForecastSummaries renders as expected 1`] = `
       class="forecast-summary"
       data-testid="forecast-summary"
     >
-      <div
-        class="forecast-summary__date"
-      >
-        Thu 1st Jan
-      </div>
-      <div
-        class="forecast-summary__icon"
-        data-testid="forecast-icon"
-      >
-        <i
-          class="wi wi-day-sunny"
-          name="owm"
-        />
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        22°C
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Stub description 1
-      </div>
       <button
         type="button"
       >
-        More details
+        <div
+          class="forecast-summary__date"
+        >
+          Thu 1st Jan
+        </div>
+        <div
+          class="forecast-summary__icon"
+          data-testid="forecast-icon"
+        >
+          <i
+            class="wi wi-day-sunny"
+            name="owm"
+          />
+        </div>
+        <div
+          class="forecast-summary__temperature"
+        >
+          22°C
+        </div>
+        <div
+          class="forecast-summary__description"
+        >
+          Stub description 1
+        </div>
       </button>
     </div>
     <div
       class="forecast-summary"
       data-testid="forecast-summary"
     >
-      <div
-        class="forecast-summary__date"
-      >
-        Thu 1st Jan
-      </div>
-      <div
-        class="forecast-summary__icon"
-        data-testid="forecast-icon"
-      >
-        <i
-          class="wi wi-day-snow"
-          name="owm"
-        />
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        23°C
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Stub description 2
-      </div>
       <button
         type="button"
       >
-        More details
+        <div
+          class="forecast-summary__date"
+        >
+          Thu 1st Jan
+        </div>
+        <div
+          class="forecast-summary__icon"
+          data-testid="forecast-icon"
+        >
+          <i
+            class="wi wi-day-snow"
+            name="owm"
+          />
+        </div>
+        <div
+          class="forecast-summary__temperature"
+        >
+          23°C
+        </div>
+        <div
+          class="forecast-summary__description"
+        >
+          Stub description 2
+        </div>
       </button>
     </div>
     <div
       class="forecast-summary"
       data-testid="forecast-summary"
     >
-      <div
-        class="forecast-summary__date"
-      >
-        Thu 1st Jan
-      </div>
-      <div
-        class="forecast-summary__icon"
-        data-testid="forecast-icon"
-      >
-        <i
-          class="wi wi-day-rain"
-          name="owm"
-        />
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        24°C
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Stub description 3
-      </div>
       <button
         type="button"
       >
-        More details
+        <div
+          class="forecast-summary__date"
+        >
+          Thu 1st Jan
+        </div>
+        <div
+          class="forecast-summary__icon"
+          data-testid="forecast-icon"
+        >
+          <i
+            class="wi wi-day-rain"
+            name="owm"
+          />
+        </div>
+        <div
+          class="forecast-summary__temperature"
+        >
+          24°C
+        </div>
+        <div
+          class="forecast-summary__description"
+        >
+          Stub description 3
+        </div>
       </button>
     </div>
   </div>

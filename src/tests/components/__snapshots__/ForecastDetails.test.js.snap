@@ -12,29 +12,51 @@ exports[`ForecastDetails renders as expected 1`] = `
       Thu 1st Jan
     </div>
     <div
-      class="forecast-details__min-temperature"
+      class="forecast-details__body"
     >
-      Min temp:12°C
-    </div>
-    <div
-      class="forecast-details__max-temperature"
-    >
-      Max temp:22°C
-    </div>
-    <div
-      class="forecast-details__humidity"
-    >
-      Humidity:80%
-    </div>
-    <div
-      class="forecast-details__wind-speed"
-    >
-      Wind speed:60mph
-    </div>
-    <div
-      class="forecast-details__wind-direction"
-    >
-      Wind direction:ne
+      <div
+        class="forecast-details__icon"
+      >
+        <i
+          class="wi wi-day-sunny"
+          name="owm"
+        />
+      </div>
+      <div
+        class="forecast-details__body__text"
+      >
+        <div
+          class="forecast-details__description"
+          id="description"
+        >
+          Clear
+        </div>
+        <div
+          class="forecast-details__min-temperature"
+        >
+          Min temp: 12°C
+        </div>
+        <div
+          class="forecast-details__max-temperature"
+        >
+          Max temp: 22°C
+        </div>
+        <div
+          class="forecast-details__humidity"
+        >
+          Humidity: 80%
+        </div>
+        <div
+          class="forecast-details__wind-speed"
+        >
+          Wind speed: 60mph
+        </div>
+        <div
+          class="forecast-details__wind-direction"
+        >
+          Wind direction: NE
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
