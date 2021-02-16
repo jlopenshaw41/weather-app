@@ -1,36 +1,53 @@
 .weather-app {
-    background-color:#3792cb;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+  background-color: #3792cb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .main-forecast {
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255,255,255,0.7);
-    width: 50%;
-    margin: 30px;
-    padding: 20px 0px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50%;
+  margin: 30px;
+  padding: 20px 0px;
 }
 
 .location-details {
-    align-self: flex-start;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
+  align-self: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
 }
 
 .error-message {
-    text-align: center;
-    font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+@media only screen and (max-width: 750px) {
+  .main-forecast {
     width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .location-details {
+    margin-left: 30px;
+  }
+
+  .weather-app {
+    height: 100%;
+    width: auto;
+  }
 }

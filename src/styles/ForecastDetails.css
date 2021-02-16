@@ -1,12 +1,12 @@
 .forecast-details {
-    width: 90%;
-    padding: 5px 20px;
-    align-self: flex-start;
-    margin-top: 0px;
+  width: 90%;
+  padding: 5px 20px;
+  align-self: flex-start;
+  margin-top: 0px;
 }
 
 .forecast-details__date {
-  align-self: flex-start;  
+  align-self: flex-start;
 }
 
 .forecast-details__body {
@@ -35,4 +35,29 @@
 .forecast-details__description {
   font-size: 1.3rem;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .forecast-details__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .forecast-details__date {
+    align-self: flex-start;
+    padding-left: 10px;
+  }
+
+  .forecast-details__body__text {
+    align-self: flex-start;
+    padding-left: 10px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .forecast-details__description {
+    margin-top: 10px;
+  }
 }
