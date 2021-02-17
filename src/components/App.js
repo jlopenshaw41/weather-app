@@ -32,19 +32,6 @@ const App = () => {
     (forecast) => forecast.date === selectedDate
   );
 
-  const handleCitySearch = () => {
-    getForecast(
-      searchText,
-      setErrorMessage,
-      setSelectedDate,
-      setForecasts,
-      setLocation
-    );
-    setSearchText("");
-  };
-
-  const handleForecastSelect = (date) => setSelectedDate(date);
-
   let backgroundImage;
 
   if (selectedForecast) {
@@ -64,6 +51,19 @@ const App = () => {
   } else {
     backgroundImage = blueSkyCloudsImage;
   }
+
+  const handleCitySearch = () => {
+    getForecast(
+      searchText,
+      setErrorMessage,
+      setSelectedDate,
+      setForecasts,
+      setLocation
+    );
+    setSearchText("");
+  };
+
+  const handleForecastSelect = (date) => setSelectedDate(date);
 
   return (
     <div
