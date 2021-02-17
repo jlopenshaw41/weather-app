@@ -1,39 +1,32 @@
 # Weather App
 
-A weather forecast app, created using React. A Manchester Codes Software Engineering course project.
+A weather forecast app, created using React.
 
-## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+The app uses the Open Weather API to retrieve and display 5-day weather forecast data for towns and cities in the UK. It includes detailed information such as: min & max temperature, humidity, wind direction and speed as well as a general description and icon depicting the general forecast.
 
-## General info
+The app was built using the latest React methodologies, using functional components and incorporating hooks, etc. The app is fully responsive, with custom styling for desktop and mobile versions. Features include a background that updates according to the selected weather forecast and forecast summaries that can be expanded to display detailed weather information for a particular day.
 
-A weather app, created using React. More info to follow as the project progresses. 
+During the development process, the app was fully tested using Jest and React Testing Library to write unit tests, following Test-Driven Development (TDD) methodology.
 
+You can see a live deployed version of the app [by clicking here.](https://weather-app-git-main.jlopenshaw41.vercel.app/)
+
+A Manchester Codes Software Engineering course project.
 ## Screenshots
 
-Coming soon!
-<!--- ![Example screenshot](./img/screenshot.png) -->
+![Example screenshot](./src/images/screenshots/Screenshot1.png)
+![Example screenshot](./src/images/screenshots/Screenshot2.png)
+![Example screenshot](./src/images/screenshots/Screenshot3.png)
+![Example screenshot](./src/images/screenshots/Screenshot4.png)
+![Example screenshot](./src/images/screenshots/localhost_3000.png)
+![Example screenshot](./src/images/screenshots/localhost_3000_2.png)
+
 ## Technologies
 * React
 * Jest
-## Features
-
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-
+* React Testing Library
+* Third-party API
 ## Status
-Project is: _in progress_ 
+Project is: _COMPLETE_ 
 ## Inspiration
 Project from the Frontend (React) module of Manchester Codes Software Engineering FastTrack course. 
 
