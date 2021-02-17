@@ -4,6 +4,7 @@ exports[`App renders as expected 1`] = `
 <DocumentFragment>
   <div
     class="weather-app"
+    data-testid="weather-app"
     style="background-image: url(blue-sky-clouds.jpg);"
   >
     <div
@@ -36,6 +37,7 @@ exports[`App renders as expected 1`] = `
     </div>
     <div
       class="main-forecast"
+      data-testid="main-forecast"
     >
       <h1
         class="location-details"

@@ -68,6 +68,7 @@ const App = () => {
   return (
     <div
       className="weather-app"
+      data-testid="weather-app"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <SearchForm
@@ -77,7 +78,7 @@ const App = () => {
       />
 
       <>
-        <div className="main-forecast">
+        <div className="main-forecast" data-testid="main-forecast">
           <LocationDetails city={location.city} errorMessage={errorMessage} />
 
           {!errorMessage && selectedForecast && (
